@@ -1,0 +1,69 @@
+@import url(https://fonts.googleapis.com/css?family=Inter);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+  --first-color: #dbe2ef;
+  --second-color: #fafafa;
+  --third-color: #aaaaaa;
+  --fourth-color: #3f72af;
+  --fifth-color: #303841;
+  --sixth-color: #ff5722;
+  --offcanvas-width: 200px;
+  --topNavBarHeight: 56px;
+}
+.light-bg {
+  background-color: var(--first-color);
+}
+.blue-bg {
+  background-color: var(--fourth-color);
+}
+.black-bg {
+  background-color: var(--fifth-color);
+}
+.grey-bg {
+  background-color: var(--third-color);
+}
+.primary-color {
+  color: var(--fourth-color);
+}
+.secondary-color {
+  color: var(--third-color);
+}
+.orange-color {
+  background-color: var(--sixth-color);
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.rounded-full {
+  border-radius: 100%;
+}
+a {
+  color: var(--fifth-color);
+  text-decoration: none;
+  background-color: transparent;
+}
+a:hover {
+  color: var(--fourth-color);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  .sidebar-nav {
+    transform: none;
+    visibility: visible !important;
+    top: var(--topNavBarHeight);
+    height: calc(100%- var(--topNavBarHeight));
+  }
+
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+}

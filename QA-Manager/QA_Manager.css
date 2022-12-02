@@ -1,0 +1,28 @@
+#nav_divider{
+    width:100%;
+    border-top:0.05px solid #FF5722;
+}
+.orange-btn-outline{
+    border:0.05px solid #FF5722;
+    color:#FF5722;
+}
+.orange-btn-filled{
+    background-color:#FF5722;
+    color:#FFF;
+}
+.blue-btn-filled{
+    background-color:#3F72AF;
+    color:#FFF;
+}
+.nav-bottom{
+    border-bottom: 1px solid #3F72AF;
+}
+.page-header{
+    text-align: center;
+}
+.mynav{
+    position:sticky;
+    top:0;
+    background-color:#FFF;
+    z-index:5;
+}
